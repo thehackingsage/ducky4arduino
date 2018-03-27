@@ -26,9 +26,9 @@
 
 ### Ducky Payload to Arduino Compiler :
 
-**Hak5 Payloads : https://github.com/hak5darren/USB-Rubber-Ducky/wiki/Payloads
+Hak5 Payloads : https://github.com/hak5darren/USB-Rubber-Ducky/wiki/Payloads
 
-**Converter : https://thehackingsage.github.io/ducky4arduino/
+Converter : https://thehackingsage.github.io/ducky4arduino/
 
 ### How To Use ? (Video Tutorial) : *** (coming soon) ***
 
