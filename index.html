@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang=en>
+  <head>
+    <title>Ducky</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/ico.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/codemirror/CodeMirror/master/lib/codemirror.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.19.0/theme/monokai.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.19.0/codemirror.js"></script>
+    <script type="text/javascript" src="https://cdn.rawgit.com/codemirror/CodeMirror/master/mode/clike/clike.js"></script>
+    <script type="text/javascript" src="https://cdn.rawgit.com/codemirror/CodeMirror/master/mode/vbscript/vbscript.js"></script>
+    <style type="text/css">
+	 	 #console,#console-head{
+        background-color: #eeeeeo;
+        padding: 5px;
+        border: solid 1px; 
+        border-color: #cacaca;
+      }
+      #console{
+        font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar form-inline">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="https://thehackingsage.github.io/ducky4arduino/">Arduino Ducky Compiler</a>
+          <button type="button" class="btn btn-success navbar-btn" id="compileThis">&#9658; Run Compiler</button>
+          <input type="text" value="Payload_Name" class="form-control" id="payloadName"/>
+          <button type="button" class="btn btn-primary navbar-btn" id="download"><span class="glyphicon glyphicon-download-alt"></span> Download Payload</button>
+          </span>
+          <span class="btn btn-default navbar-btn">
+            <a href="https://github.com/hak5darren/USB-Rubber-Ducky/wiki/Payloads" target="_blank">
+              <span class="glyphicon glyphicon-folder-open"></span> Hak5 Payloads
+            </a>
+          </span>
+		  <span class="btn btn-default navbar-btn">
+            <a href="https://github.com/thehackingsage/ducky4arduino/blob/master/Arduino%20Ducky%20Scripts/" target="_blank">
+              <span class="glyphicon glyphicon-info-sign"></span> Arduino Ducky Payloads
+            </a>
+          </span>
+      </div>
+    </div>
+    <div class="row text-center">
+      <strong>NOTE:</strong> All Ducky Scripts Are Tested on <a href="http://amzn.in/9YpCVNS" target="_blank">Arduino Leonardo Mini</a> and <a href="http://amzn.in/cQSJxyx" target="_blank">Arduino Uno</a>
+    </div>
+    <div class="row">
+      <div class="col-xs-6">
+        <label for="duckyScript"><h3>Ducky Script</h3></label>
+        <br/>
+        <textarea id="duckyScript" style="width: 100%; height: 300px;" autofocus></textarea>
+      </div>
+      <div class="col-xs-6">
+        <label for="arduinoout"><h3>Arduino</h3></label><br/>
+        <textarea readonly id="arduiCode" style="width: 100%;"></textarea>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row" id="console-head">
+        Console:
+        <div id="console" style="width: 100%;">&nbsp;</div>
+      </div>
+    </div>
+    <hr/>
+
+    <div class="row text-center">
+      Build by <a href="https://github.com/thehackingsage" target="_blank">Mr. SAGE</a>
+    </div>
+
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/Ducky.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
